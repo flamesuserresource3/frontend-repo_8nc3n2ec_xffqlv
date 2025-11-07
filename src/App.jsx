@@ -3,12 +3,16 @@ import HeroCover from './components/HeroCover';
 import RoleLogin from './components/RoleLogin';
 import RoleAwareDashboard from './components/RoleAwareDashboard';
 import TopNav from './components/TopNav';
+import SectionTabs from './components/SectionTabs';
+import PatientsManager from './components/PatientsManager';
+import BillingManager from './components/BillingManager';
 
 export default function App() {
   const [user, setUser] = useState(null);
+  const [active, setActive] = useState('dashboard');
 
-  const handleLogin = (u) => setUser(u);
-  const handleLogout = () => setUser(null);
+  const handleLogin = (u) => { setUser(u); setActive('dashboard'); };
+  const handleLogout = () => { setUser(null); setActive('dashboard'); };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-slate-50 text-slate-900">
@@ -25,7 +29,20 @@ export default function App() {
             <div className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
               <p className="text-sm text-slate-600">Welcome back, <span className="font-semibold text-slate-800">{user.email}</span>. You are signed in as <span className="font-semibold">{user.role}</span>.</p>
             </div>
-            <RoleAwareDashboard role={user.role} />
+
+            <SectionTabs onChange={setActive} />
+
+            {active === 'dashboard' && (
+              <RoleAwareDashboard role={user.role} />
+            )}
+
+            {active === 'patients' && (
+              <PatientsManager role={user.role} />
+            )}
+
+            {active === 'billing' && (
+              <BillingManager role={user.role} />
+            )}
 
             <section id="settings" className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
               <h3 className="text-sm font-semibold text-slate-700">Profile Settings</h3>
