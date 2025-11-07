@@ -1,0 +1,57 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 283 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.9.43:3000/
+5:09:56 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/HeroCover.jsx:28:2: ERROR: Expected ")" but found end of file
+5:09:56 AM [vite] ✨ new dependencies optimized: lucide-react
+5:09:56 AM [vite] ✨ optimized dependencies changed. reloading
+5:09:57 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/HeroCover.jsx:28:2: ERROR: Expected ")" but found end of file
+5:09:58 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/HeroCover.jsx:28:2: ERROR: Expected ")" but found end of file
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/HeroCover.jsx:28:2
+  
+  Expected ")" but found end of file
+  26 |        </div>
+  27 |      </section>
+  28 |    
+     |    ^
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+5:10:20 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/HeroCover.jsx:28:2: ERROR: Expected ")" but found end of file
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/HeroCover.jsx:28:2
+  
+  Expected ")" but found end of file
+  26 |        </div>
+  27 |      </section>
+  28 |    
+     |    ^
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
