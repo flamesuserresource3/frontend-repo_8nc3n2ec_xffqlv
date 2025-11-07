@@ -7,7 +7,7 @@ export default function HeroCover() {
         <Spline scene="https://prod.spline.design/2fSS9b44gtYBt4RI/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
       <div className="relative z-10 flex items-center h-full">
-        <div className="px-6 md:px-12 max-w-4xl">
+        <div className="px-6 md:px-12 max-w-4xl relative">
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#030712] via-[#030712]/70 to-transparent" />
           <div className="relative">
             <span className="inline-flex items-center rounded-full bg-emerald-500/10 text-emerald-300 px-3 py-1 text-xs font-medium ring-1 ring-inset ring-emerald-500/20">Healthcare • Inventory • Patients</span>
@@ -25,4 +25,5 @@ export default function HeroCover() {
         </div>
       </div>
     </section>
-  
+  );
+}
